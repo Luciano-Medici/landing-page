@@ -18,21 +18,44 @@ body {
     padding: 40px 120px;
 }
 
+ul,
+.header,
+.one,
+.header-content,
+.left,
+.right,
+.content,
+.box,
+.two,
+.three,
+.three .box1,
+.footer {
+    display: flex;
+}
+
+.footer, 
+.right,
+.box,
+.two,
+.three {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content,
+.three .box1 {
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 16px;
 }
 
-.texto,
-.box .text,
-a,
-li,
-.subtitle {
+.text {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -52,17 +75,16 @@ a {
     color: #F9FAF8;
 }
 
+.box,
+.left,
 .header,
-.one {
-    display: flex;
+.one,
+.two {
     flex-direction: column;
     gap: 20px;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 50px 0px;
 }
 
@@ -72,11 +94,8 @@ a {
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 16px;
 }
 
 .title {
@@ -93,25 +112,13 @@ button {
     border: none;
 }
 
-.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .content {
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 0;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
     max-width: 100px;
 }
 
@@ -130,7 +137,8 @@ button {
     text-align: center;
 }
 
-.one {
+.one,
+.three {
     background-color: white;
 }
 
@@ -140,10 +148,6 @@ button {
 }
 
 .two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #E5E7EB;
     font-size: 36px;
     font-weight: lighter;
@@ -161,17 +165,7 @@ button {
     font-weight: bold;
 }
 
-.three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
 .three .box1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
     background-color: #3883F6;
     padding: 40px 80px;
@@ -186,10 +180,4 @@ button {
 
 button:hover{
     cursor: pointer;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
