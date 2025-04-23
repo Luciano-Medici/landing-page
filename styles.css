@@ -62,6 +62,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .logo {
@@ -86,6 +87,13 @@ a {
 
 .header-content {
     padding: 50px 0px;
+}
+
+.image{
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #1F2937;
+    border-radius: 10px;
 }
 
 .left,
@@ -114,19 +122,22 @@ button {
 
 .content {
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     padding: 20px 0;
-}
-
-.box {
-    max-width: 100px;
+    gap: 20px;
 }
 
 .rectangle {
     flex: 1;
-    border: 2px solid blue;
-    min-width: 100px;
-    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.rectangle img{
+    width: 100px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -156,6 +167,8 @@ button {
 
 .two .text,
 .two .name{
+    font-size: 36px;
+    color: #1F2937;
     padding: 20px 60px;
 }
 
